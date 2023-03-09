@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, FlatList } from 'react-native';
 import { useFonts } from 'expo-font';
 import data from './data';
 
@@ -8,6 +8,7 @@ import Icon from './weatherIcon';
 import WeatherDetail from './component/WeatherDetail';
 import WeatherHourly from './component/WeatherHourly';
 import WeatherSummary from './component/WeatherSummary';
+import { Hour } from './component/Hour';
 
 export default function App() {
 
@@ -23,13 +24,14 @@ export default function App() {
 
   return (
     <ScrollView style={styles.container}>
-        <Text style={styles.text}>{data.current.temp}</Text>
+       
       <WeatherSummary/>
 
-      <Icon name="wi-cloudy-gusts"  style={styles.icon}/>
-
+    
 
       <WeatherDetail/>
+
+      
 
 
       <WeatherHourly/>

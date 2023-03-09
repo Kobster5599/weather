@@ -8,7 +8,14 @@ const FontConstants = {
 
 const ColorConstants = {
     background: isDarkMode ? '#333333' : '#efefef',
-    backgroundMedium: isDarkMode ? '#666666' : '#dddddd'
+    backgroundMedium: isDarkMode ? '#666666' : '#dddddd',
+
+    normal: isDarkMode ? '#cccccc' : '#cccccc',
+    title: isDarkMode ? '#ffffff' : '#000000',
+    highlight: isDarkMode ? 'lightblue' : 'darkblue',
+
+    backgroundDark: '#333333',
+    backgroundMed: '#666666'
 };
 
 const SizeConstants = {
@@ -17,3 +24,5 @@ const SizeConstants = {
     paddingLarge: 16,
     borderRadius: 8
 };
+
+export { FontConstants, ColorConstants, SizeConstants }
