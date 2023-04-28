@@ -2,7 +2,7 @@ import {StyleSheet, View, Text, Image } from 'react-native'
 import React from 'react'
 import heroImage from '../assets/cloud.jpg';
 
-export default function WeatherSummary() {
+export default function WeatherSummary({data}) {
   return (
     <View style={styles.heroContainer}>
       <Text style={styles.text}>Good Afternoon</Text>

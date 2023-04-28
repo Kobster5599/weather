@@ -1,8 +1,9 @@
 import React from 'react'
 import { View } from 'react-native';
-import data from '../data';
+// import data from '../data';
+import { Day } from './Day';
 
-export const WeatherDaily = () => {
+export const WeatherDaily = ({data}) => {
   return (
     <View>
         <Day day={data.daily[0]} />

@@ -2,9 +2,9 @@ import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
 
 import { Hour } from './Hour'
-import data from '../data'
+// import data from '../data'
 
-export default function WeatherHourly() {
+export default function WeatherHourly({data}) {
   return (
     <View>
       <Text style={styles.text}>Hourly</Text>

@@ -2,12 +2,12 @@ import { StyleSheet, View, Text } from 'react-native'
 import React from 'react'
 import { DetailTile } from './DetailTile'
 
-import data from '../data'
+// import data from '../data'
 
-export default function WeatherDetail() {
+export default function WeatherDetail({data}) {
   return (
     <View>
-      <Text style={styles.text}>Detail</Text>
+      <Text style={styles.text}>Current</Text>
       <View style={styles.detailContainer}>
         <DetailTile iconName="wi-thermometer" title="Current Temp" data={data.current.temp}  />
         <DetailTile iconName="wi-thermometer" title="Feels Like" data={data.current.feels_like} />
